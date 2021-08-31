@@ -1,0 +1,28 @@
+{
+  "msg_type": "6",
+  "nfid": "4701FFFFFFFF0201c0a877c8",
+  "type": "flow_vni_cvlan_pvlan_7140288_1592_1513",
+  "timetick": 1624958957006,
+  "account": {
+    "vni": 7140288,
+    "pvlan": 1513,
+    "cvlan": 1592
+  },
+  "data": [
+    {
+      "mac": "64:00:6a:6e:36:1b",
+      "recv_pkt": 294,
+      "recv_byte": 52391,
+      "recv_drop_pkt": 0,
+      "recv_bps": 64,
+      "recv_pkt_add": 32,
+      "recv_byte_add": 4860,
+      "send_pkt": 0,
+      "send_byte": 0,
+      "send_drop_pkt": 0,
+      "send_bps": 0,
+      "send_pkt_add": 0,
+      "send_byte_add": 0
+    }
+  ]
+}

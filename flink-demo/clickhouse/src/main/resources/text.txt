@@ -1,0 +1,12 @@
+./configure --prefix=/usr/local/apps/openresty --with-luajit --without-http_redis2_module --with-http_iconv_module --with-http_stub_status_module --with-http_realip_module
+
+
+cd /usr/local/apps/openresty
+./configure --prefix=/usr/local/apps/openresty --with-http_realip_module --with-pcre --with-luajit --add-module=/usr/local/apps/ngx_cache_purge-2.3/ --add-module=nginx_upstream_check_module-0.3.0/ -j2
+make && make install
+
+
+create table t(id Int8,name String,time Datetime)ENGINE =MergeTree PARTITION BY toYYYYMM(time) PRIMARY KEY time;
+insert into t values(1,'zdp','2021-07-06 20:03:34');
+
+create table kafkasource(id Int8,name String,age Int8) ENGINE = Kafka('10.50.51.46:9092', 'ck', 'group1', 'JSONEachRow');

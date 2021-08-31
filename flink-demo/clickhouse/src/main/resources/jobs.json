@@ -1,0 +1,80 @@
+{
+  "jid": "87c6ee71c9bedf785a777cfed50d4f27",
+  "name": "kafka-flink-table-clickhouse with 1 p type5",
+  "isStoppable": false,
+  "state": "RUNNING",
+  "start-time": 1625728080485,
+  "end-time": -1,
+  "duration": 156673,
+  "now": 1625728237158,
+  "timestamps": {
+    "FAILING": 0,
+    "FINISHED": 0,
+    "RESTARTING": 0,
+    "FAILED": 0,
+    "SUSPENDED": 0,
+    "INITIALIZING": 1625728080485,
+    "CREATED": 1625728080775,
+    "CANCELED": 0,
+    "RECONCILING": 0,
+    "CANCELLING": 0,
+    "RUNNING": 1625728081884
+  },
+  "vertices": [
+    {
+      "id": "cbc357ccb763df2852fee8c4fc7d55f2",
+      "name": "Source: Custom Source -> Flat Map -> Sink: clickhouse",
+      "parallelism": 1,
+      "status": "RUNNING",
+      "start-time": 1625728155101,
+      "end-time": -1,
+      "duration": 82057,
+      "tasks": {
+        "CREATED": 0,
+        "RECONCILING": 0,
+        "CANCELING": 0,
+        "SCHEDULED": 0,
+        "FAILED": 0,
+        "DEPLOYING": 0,
+        "CANCELED": 0,
+        "RUNNING": 1,
+        "FINISHED": 0
+      },
+      "metrics": {
+        "read-bytes": 0,
+        "read-bytes-complete": false,
+        "write-bytes": 0,
+        "write-bytes-complete": false,
+        "read-records": 0,
+        "read-records-complete": false,
+        "write-records": 0,
+        "write-records-complete": false
+      }
+    }
+  ],
+  "status-counts": {
+    "CREATED": 0,
+    "RECONCILING": 0,
+    "CANCELING": 0,
+    "SCHEDULED": 0,
+    "FAILED": 0,
+    "DEPLOYING": 0,
+    "CANCELED": 0,
+    "RUNNING": 1,
+    "FINISHED": 0
+  },
+  "plan": {
+    "jid": "87c6ee71c9bedf785a777cfed50d4f27",
+    "name": "kafka-flink-table-clickhouse with 1 p type5",
+    "nodes": [
+      {
+        "id": "cbc357ccb763df2852fee8c4fc7d55f2",
+        "parallelism": 1,
+        "operator": "",
+        "operator_strategy": "",
+        "description": "Source: Custom Source -&gt; Flat Map -&gt; Sink: clickhouse",
+        "optimizer_properties": {}
+      }
+    ]
+  }
+}

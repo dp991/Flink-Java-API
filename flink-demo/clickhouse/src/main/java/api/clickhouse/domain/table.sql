@@ -1,0 +1,20 @@
+create table cloud_switch_msg_type_5 (
+    nfid String ,
+    type String ,
+    port String ,
+    port_speed String,
+    fix_speed String,
+    recv_pkt Int16,
+    recv_byte Int16,
+    recv_drop_pkt Int16,
+    recv_err_pkt Int16,
+    recv_pps Int16,
+    recv_bps Int16,
+    send_pkt Int16,
+    send_byte Int16,
+    send_drop_pkt Int16,
+    send_err_pkt Int16,
+    send_pps Int16,
+    send_bps Int16,
+    time DateTime
+) ENGINE =MergeTree PARTITION BY toYYYYMM(time) PRIMARY KEY time;
